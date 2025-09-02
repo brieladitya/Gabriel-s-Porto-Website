@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #F0F2BD;
+    font-family: 'Archivo', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 120vh;
+    flex-wrap: wrap;
+    background-image: url("../img/decor.png");
+    background-size: cover;
+}
+
+
+.profile-content{
+    display: block;
+    margin-left: 27px;
+    max-width: 500px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    max-width: 500px;
+}
+
+.hero-content p, 
+.hero-content h1 {
+    margin: 0;
+}
+
+.hero-content h1{
+    font-family: 'Archivo', sans-serif;
+    color: #CA7842; 
+    margin: 2px 0;
+    font-size: clamp(32px, 8vw, 86px);
+}
+
+.hero-content p:last-of-type{
+    font-family: 'Archivo', sans-serif;
+    background-color: #A7C093;
+    padding: 7px 15px;
+    border-radius: 3px;
+    color: #F0F2BD;
+    margin: 2px 0;
+    font-size: clamp(12px, 2vw, 16px);
+    width: fit-content;
+    max-width: 100%;
+}
+
+.hero-content p:first-of-type{
+    font-family: 'Archivo', sans-serif;
+    padding: 7px 15px;
+    border-radius: 3px;
+    color: #CA7842;
+    margin: 2px 0;
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+/* header */
+.main-header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    color: #CA7842;
+    font-family: 'Archivo', sans-serif;
+    width: 97%;
+
+
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px 50px;
+    background-color: #F0F2BD;
+}
+
+.header-nav li a {
+    position: relative;
+    text-decoration: none;
+    color: #CA7842;
+    padding: 5px 0;
+    transition: color 0.1s ease;
+}
+
+.header-nav li a::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #A7C093;
+    transition: width 0.2s ease-in-out;
+}
+
+.header-nav li a:hover {
+    color: #A7C093;
+}
+
+.header-nav li a:hover::after {
+    width: 100%;
+}
+
+/* aboutme */
+.about-section{
+    display: flex;
+    justify-content: center;
+    background-color: #CA7842;
+    color: #F0F2BD;
+    padding: 40px 20px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.about-content{
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.about-content h1{
+    font-size: clamp(28px, 6vw, 70px);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.about-content p{
+    font-size: clamp(14px, 3vw, 25px);
+    text-align: justify;
+    font-weight: lighter;
+}
+
+/* project section */
+
+.project-base{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 500vh;
+    margin-top: 20%;
+    gap: 50px;
+    background-image: url("../img/decor-3.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.project-text{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 15px;
+    color: #A7C093;
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.project-1 img, .project-2 img{
+    width: 100%;
+    height: auto;
+    
+    border-radius: 10px;
+}
+
+.project-1 , .project-2{
+    
+    background-position-y: 100%;
+    background-size: contain;
+    background-image: url("../img/decor-4.png");
+    background-color: #CA7842;
+    width: 500px;
+    padding: 25px;
+    border-radius: 10px;
+    color: #F0F2BD;
+    font-size: 30px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+
+}
+
+.project-1 h2, .project-2 h2{
+    text-align: center;
+
+}
+
+.project-1 p, .project-2 p{
+    text-align: justify;
+    padding: 30px;
+}
+
+/* contact */
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    height: 100%;
+    padding: 20px;
+}
+
+.contact-text{
+    font-size: 26px;
+    color: #CA7842;
+    font-weight: 50;
+    margin-top: 10px;
+}
+
+.contact-social{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-social a[aria-label]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #CA7842;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;                  
+    height: 40px;
+    margin: 5px;
+    color: #F0F2BD;
+    transition: transform 0.2s ease;
+}
+
+.contact-social img{
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+}
+
+.contact-social a[aria-label]:hover{
+    background: #A7C093;
+    color: #F0F2BD;
+    transition: 4ms;
+    transform: scale(1.05);
+}
+
+.contact-copyright{
+    color: #CA7842;
+    border-top: #CA7842 solid 1px;
+    width: 100%;
+}
+
+.contact-copyright p{
+    color: #CA7842;
+    margin-top: 20px;
+    text-align: center
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-content p:last-of-type {
+        width: auto;
+        display: inline-block;
+    }
+
+    .about-content {
+        padding: 30px 20px;
+    }
+
+    .project-container {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav ul {
+        gap: 40px;
+        padding: 15px 25px;
+    }
+
+    .hero-section {
+        gap: 20px;
+    }
+
+    .project-1, .project-2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content h1 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
